@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta charset="utf-8">
+<title>Grok Bitcoin - {{ page.title }}</title>
+<title>http://www.bootstrapzero.com/bootstrap-template/affix-sidebar</title>
+<meta name="generator" content="Bootply" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="/bootstrap/img/favicon.ico">
+<link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+
+<style type="text/css">
+body {
+  padding-top:90px;
+}
+
+.navbar .container { min-height: 83px; }
+.navbar-nav { 
+  float:right;
+}
+
+.navbar-nav li a, .navbar-nav li {
+  height: 90px;
+  vertical-align:middle;
+  display:table-cell;
+}
+
+.navbar-brand h2 {
+  margin-top:12px;
+}
+
+#masthead h1 {
+  font-size: 30px;
+  line-height: 1;
+  padding-top:20px;
+}
+
+#masthead .well {
+  margin-top:12%;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 50px;
+  }
+}
+
+.navbar-bright {
+  background-color:#111155;
+  color:#fff;
+}
+
+.affix-top,.affix{
+  position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top:110px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  border:0 #eee solid;
+  border-right-width:4px;
+}
+</style>
+</head>
+<body>
+<header class="navbar navbar-default navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand" style="padding:3px; margin:0px;">
+        <div>
+          <img style="float:left; margin:10px;" src="/img/bitcoin.png" width="60">
+          <div class="pull-left">
+            <h2 style="margin-bottom:2px; margin-top:10px;">Grok Bitcoin</h2>
+            <small style="font-size:10pt; padding:0px;">Your guide to understanding cryptocurrency</small>
+          </div>
+        </div>
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li{% if page.active == "understand" %} class="active"{% endif%}>
+          <a href="/">What is Bitcoin?</a>
+        </li>
+        <li{% if page.active == "works" %} class="active"{% endif %}>
+          <a href="/how_bitcoin_works">How Bitcoin Works</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
